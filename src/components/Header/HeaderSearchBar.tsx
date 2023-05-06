@@ -1,5 +1,4 @@
 import React from "react";
-import {ImSearch} from "react-icons/im"
 import Image from "next/image"
 import searchIcon from "../../../public/search-icon.svg"
 

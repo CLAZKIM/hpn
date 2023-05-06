@@ -3,6 +3,7 @@
 const path = require('path')
 
 const nextConfig = {
+  // basePath: "/hpn",
   experimental: {
     appDir: true,
   },
