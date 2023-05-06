@@ -1,0 +1,27 @@
+@use "../helpers/index" as *;
+
+.navbar{
+    width: 100%;
+    height: #{$var-navbar-height};
+    background-color: #{$var-white-color};
+    &__inner-container{
+        justify-content: space-between;
+    }
+    &__menu{
+        li:first-child{
+            padding-left: 0;
+            a{
+                padding-left: 0;
+            }
+        }
+        li.nav__link--active{
+            font-weight: bold;
+        }
+    }
+    //임시 레이아웃 망가지기 방지
+    @media (max-width: 720px) {
+        &__util-group{
+            display: none;
+        }
+    }
+}

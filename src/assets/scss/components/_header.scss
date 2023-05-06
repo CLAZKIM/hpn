@@ -1,0 +1,87 @@
+@use "../helpers/index" as *;
+
+.header{
+    width: 100%;
+    height: #{$var-header-height};
+    background-color: #{$var-white-color};
+    font-family: #{$var-header-font-family};
+    &__inner-container{
+        justify-content: space-between;
+    }
+    &__logo-container{
+        display: flex;
+        align-items: center;
+        max-height: #{$var-header-height};
+    }
+    &__logo-icon{
+        display: flex;
+        width: 100px;
+        height: 44px;
+        background-color: black;
+        svg{
+            width: auto;
+        }
+    }
+    &__util-group{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        .nav{
+            &__link:last-child{
+                padding-right: 0;
+                a{
+                    padding:0;
+                }
+            }
+            &__link:not(.nav__link--active) {
+                a{
+                    color: #{$var-grey-4}
+                }
+            }
+        }
+    }
+    &__search-bar{
+        width: 256px;
+        height: 36px;
+        position: relative;
+        input{
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            border: none;
+            background-color: #{$var-blue-gray-1};
+            padding: 6px 24px;
+            padding-right: 3.5rem;
+        }
+        ::-webkit-input-placeholder {
+            /* Chrome, Safari, Opera */
+            color: #{$var-grey-3}
+          }
+          ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #{$var-grey-3}
+          }
+          :-ms-input-placeholder {
+            /* IE 10+ */
+            color: #{$var-grey-3}
+          }
+          :-moz-placeholder {
+            /* Firefox 18- */
+            color: #{$var-grey-3}
+          }
+        .search-icon{
+            position: absolute;
+            top: 50%;
+            right: 1.5rem;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+    //임시 레이아웃 망가지기 방지
+    @media (max-width: 515px) {
+        &__util-group{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@use "../helpers/index" as *;
+
+@mixin btn() {
+    .btn{
+        color: red;
+        background-color: black;
+        &:hover{
+            background-color: tomato;
+        }
+    }
+}

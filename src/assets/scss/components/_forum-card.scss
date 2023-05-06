@@ -1,0 +1,93 @@
+@use "../helpers/index" as *;
+
+.forum-card{
+    padding-right: 12px;
+    padding-left: 12px;
+    width: 50%;
+    &__item{
+        width: 100%;
+        background-color: #{$var-white-color};
+        height: #{$var-forum-card-height};
+        box-shadow: #{$var-card-shadow};
+        border-radius: 30px;
+        padding: 24px 24px 30px;
+    }
+    //title
+    &__title-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: #{$var-font-size-large};
+            color: #{$var-main-color-deep}
+        }
+    }
+    &__more-text{
+        display: flex;
+        align-items: center;
+        color: #{$var-grey-3};
+    }
+    //post
+    &__posts-group{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75%;
+    }
+    &__post-item{
+        display: flex;
+    }
+    &__forum-name{
+        color: #{$var-grey-3};
+        margin-right: 20px;
+    }
+    &__post-title{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    &__comment-count{
+        color: #{$var-main-color};
+        margin-left: 6px;
+        &--new::after{
+            content: "N";
+            margin-left: 6px;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            color: red;
+            font-size: 0.1rem;
+        }
+    }
+
+    //layout
+    &:nth-child(2n+1){
+        padding-left: 0;
+    }
+    &:nth-child(2n){
+        padding-right: 0;
+    }
+    &:nth-child(n+3){
+        margin-top: 24px;
+    }
+    @media (max-width: 695px) {
+        &{
+            width: 100%;
+            margin-top: 24px;
+            padding: 0;
+            &:first-child{
+                margin-top: 0;
+            }
+            &:nth-child(2n+1){
+                padding: 0;
+            }
+            &:nth-child(2n) {
+                padding: 0;
+            }
+        }
+    }
+}

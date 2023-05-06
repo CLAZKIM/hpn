@@ -1,0 +1,102 @@
+// 사이트 메인 폰트
+@font-face {
+    font-family: 'Pretendard';
+    src: url('~src/assets/fonts/Pretendard/ttf/Pretendard-Light.ttf') format('truetype'),
+    url('~src/assets/fonts/Pretendard/woff/Pretendard-Light.woff') format('woff'),
+    url('~src/assets/fonts/Pretendard/ttf/Pretendard-Regular.ttf') format('truetype'),
+    url('~src/assets/fonts/Pretendard/woff/Pretendard-Regular.woff') format('woff'),
+    url('~src/assets/fonts/Pretendard/ttf/Pretendard-Bold.ttf') format('truetype'),
+    url('~src/assets/fonts/Pretendard/woff/Pretendard-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('~src/assets/fonts/Pretendard/ttf/Pretendard-Light.ttf') format('truetype'),
+    url('~src/assets/fonts/Pretendard/woff/Pretendard-Light.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('~src/assets/fonts/Pretendard/ttf/Pretendard-Regular.ttf') format('truetype'),
+    url('~src/assets/fonts/Pretendard/woff/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('~src/assets/fonts/Pretendard/ttf/Pretendard-Bold.ttf') format('truetype'),
+    url('~src/assets/fonts/Pretendard/woff/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+//Header 폰트
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('~src/assets/fonts/Noto_Sans_KR/NotoSansKR-Light.otf') format('opentype'),
+    url('~src/assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf') format('opentype'),
+    url('~src/assets/fonts/Noto_Sans_KR/NotoSansKR-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('~src/assets/fonts/Noto_Sans_KR/NotoSansKR-Light.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('~src/assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('~src/assets/fonts/Noto_Sans_KR/NotoSansKR-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+//소개용 배너 폰트
+@font-face {
+    font-family: 'Arita-buri';
+    src: url('~src/assets/fonts/Arita-buri/ttf/AritaBuri-Light.ttf') format('truetype'),
+    url('~src/assets/fonts/Arita-buri/woff/AritaBuri-Light.woff') format('woff'),
+    url('~src/assets/fonts/Arita-buri/ttf/AritaBuri-Medium.ttf') format('truetype'),
+    url('~src/assets/fonts/Arita-buri/woff/AritaBuri-Medium.woff') format('woff'),
+    url('~src/assets/fonts/Arita-buri/ttf/AritaDotum-Bold.ttf') format('truetype'),
+    url('~src/assets/fonts/Arita-buri/woff/AritaDotum-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    src: url('~src/assets/fonts/Arita-buri/ttf/AritaBuri-Light.ttf') format('truetype'),
+    url('~src/assets/fonts/Arita-buri/woff/AritaBuri-Light.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    src:url('~src/assets/fonts/Arita-buri/ttf/AritaBuri-Medium.ttf') format('truetype'),
+    url('~src/assets/fonts/Arita-buri/woff/AritaBuri-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arita-buri';
+    src: url('~src/assets/fonts/Arita-buri/ttf/AritaDotum-Bold.ttf') format('truetype'),
+    url('~src/assets/fonts/Arita-buri/woff/AritaDotum-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

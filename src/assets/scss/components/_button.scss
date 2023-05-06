@@ -1,0 +1,15 @@
+@use "../helpers/index" as *;
+
+.button{
+    font-family: inherit;
+    border: none;
+    line-height: 14px;
+    padding: 8px 13px;
+    color: #{$var-white-color};
+    font-size: 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+    &[data-color="primary"] {
+        background-color: #{$var-main-color};
+      }
+}

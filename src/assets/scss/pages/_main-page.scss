@@ -1,0 +1,55 @@
+@use "../helpers/index" as *;
+
+.main-page{
+    .forum-card-container{
+        margin-top: 30px;
+    }
+    .introduce-banner-container{
+        margin-top: 40px;
+        >div{
+            background: linear-gradient(89.1deg, #475DCF 0%, #B687F1 100%);
+            border-radius: 14px;
+        }
+        @media (max-width: 695px) {
+            .introduce-banner{
+                &__title{
+                    margin-top: 4px;
+                    font-size: #{$var-font-size-xLarge};
+                }
+                &__group{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .introduce-banner-link{
+        width: 100%;
+    }
+    .introduce-banner{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('../../img/rain.png') no-repeat center center;
+        background-size: cover;
+        &__group{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+        }
+        &__title-group{
+            font-family: "Arita-buri";
+            color: #{$var-white-color};
+        }
+        &__subtitle{
+            font-size: #{$var-font-size-large};
+            font-weight: normal;
+        }
+        &__title{
+            margin-top: 4px;
+            font-size: #{$var-font-size-xxLarge};
+        }
+    }
+}

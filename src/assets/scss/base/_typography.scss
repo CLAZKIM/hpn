@@ -1,0 +1,13 @@
+@use "../helpers/index" as *;
+
+.h1{
+    font-size: #{$var-font-size-xLarge};
+}
+
+.h2{
+    font-size: #{$var-font-size-large};
+}
+
+.h4{
+    font-size: #{$var-font-size-small};
+}

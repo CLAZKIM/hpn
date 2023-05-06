@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    &--default{
+        max-width: 1220px;
+    }
+    &__inner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 1220px) {
+        &{
+            padding: 0 10px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use "../helpers/index" as *;
+
+body, html{
+    font-size: #{$var-font-size-base};
+    color: #{$var-black-color};
+    font-family: #{$var-sans-serif-family};
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+h1, h2, h3, h4, h5, h6, span, p, div {
+    word-break: keep-all;
+    white-space: pre-wrap;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: left;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.doc-main{
+  min-height: calc(100vh - 60px);
+  background-color: #{$var-blue-gray-1};
+  .main-content{
+    padding-top: 28px;
+    padding-bottom: 120px;
+  }
+}

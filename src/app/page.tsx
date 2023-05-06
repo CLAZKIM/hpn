@@ -1,91 +1,61 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+//componets
+import Container from "@/components/Layout/Container/Container"
+import InnerContainer from "@/components/Layout/Container/InnerContainer"
+import MenuCard from "@/components/Card/MenuCard"
+import ForumCard from "@/components/Card/ForumCard"
+//icons
+import Image from "next/image"
+import megaphoneEmoji from "../../public/megaphone.svg"
+import documentEmoji from "../../public/document.svg"
+import voteEmoji from "../../public/vote.svg"
+import pencilEmoji from "../../public/pencil.svg"
+import paperEmoji from "../../public/paper.svg"
+import crownEmoji from "../../public/crown.svg"
+import bannerEmoji from '../../public/thinking_face_icon.svg'
+import fireEmoji from "../../public/fire.svg"
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+function test() {
+    
+    return(
+        <div className="main-content main-page">
+            <Container className="menu-card-container">
+                <InnerContainer>
+                    <MenuCard title="공지사항" subtitle="꼭 확인해주세요!" emoji={{src: megaphoneEmoji, alt:"magaphone"}} />
+                    <MenuCard title="과거시험 챌린지" subtitle="과거시험에 도전하시겠습니까?" emoji={{src: documentEmoji, alt:"document"}}/>
+                    <MenuCard title="투표게시판" subtitle="당신의 이름에 투표하세요!" emoji={{src: voteEmoji, alt:"vote"}}/>
+                    <MenuCard title="작명소" subtitle="작명을 도와주세요~" emoji={{src: pencilEmoji, alt:"pencil"}} />
+                    <MenuCard title="자유게시판" subtitle="자유롭게 글을 남겨요~" emoji={{src: paperEmoji, alt:"paper"}}/>
+                    <MenuCard title="가문의 영광" subtitle="내 성씨가 최고야!" emoji={{src: crownEmoji, alt:"crown"}} />
+                </InnerContainer>
+            </Container>
+            <Container className="forum-card-container">
+                <InnerContainer>
+                    <ForumCard title="공지사항" id="FORUM_LIST_1"/>
+                    <ForumCard title=" 지금 핫한 인기글!" emoji={{src:fireEmoji, alt:"fire"}} id="FORUM_LIST_2" showForum/>
+                    <ForumCard title="투표게시판" id="FORUM_LIST_3"/>
+                    <ForumCard title="작명소" id="FORUM_LIST_4"/>
+                    <ForumCard title="자유게시판" id="FORUM_LIST_5"/>
+                </InnerContainer>
+            </Container>
+            <Container className="introduce-banner-container">
+                <InnerContainer>
+                    <a href="#" className="introduce-banner-link">
+                    <div className="introduce-banner">
+                        <div className="introduce-banner__group">
+                            <div className="introduce-banner__title-group">
+                                <h2 className="introduce-banner__subtitle">누가 제일 별난 이름을 가졌소?</h2>
+                                <h1 className="introduce-banner__title">제1회 너의 이름이 보여</h1>
+                            </div>
+                            <span className="introduce-banner__emoji">
+                                <Image src={bannerEmoji} alt="Logo" />
+                            </span>
+                        </div>
+                    </div>
+                    </a>
+                </InnerContainer>
+            </Container>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    )
 }
+
+export default test
